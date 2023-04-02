@@ -1,0 +1,42 @@
+body{
+  background-color:#080220;
+  perspective: 1000px;
+}
+
+.card-wrapper {
+  position: absolute;
+  left: 45%;
+  bottom: -15vh;
+  width: 15vw;
+  height: 45vh;
+  background-color: rgb(245, 242, 242);
+  clip-path: url(#clip-path-card);
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.card-wrapper {
+  transform-style: preserve-3d;
+}
+.card-wrapper {
+  position: relative;
+  width: 15vw;
+  height: 45vh;
+  background-color:#0d0220;
+  clip-path: polygon(0% 15%, 0 0, 0 0, 79% 0, 85% 15%, 100% 15%, 100% 88%, 100% 100%, 15% 100%, 0 100%, 0% 85%);
+  shape-rendering: geometricPrecision;
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
